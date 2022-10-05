@@ -64,7 +64,14 @@ As the two mocking frameworks we will compare Moq is the only one that has a ded
 var movieScore = new Mock<IMovieScore>();
 ```
 
-#### 1. Next up you can call the *Setup* and *Return* methods to setup any method calls on the mocks and what the should return: 
+#### 2. Next up you can call the *Setup* and *Return* methods to setup any method calls on the mocks and what the should return: 
+
+```
+movieScore.Setup(ms => ms.Score(It.IsAny<string>())).Returns(score);
+```
+
+#### 3. The setup verification of a method being called with a specific parameter, use the *Verify* method
+
 
 ```
 movieScore.Verify(ms => ms.Score(title));
