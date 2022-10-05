@@ -39,12 +39,15 @@ A simple test to see if the software might have been susceptible to SQL-injectio
 
 * @RepeatedTest - Is used to signal that the annotated method is a test template method that should be repeated a specified number of times. It is important to note that the repeated tests work with the same data. Using an alternative such as paramatized tests can be used to work with data variations.
 
-* @BeforeEach, @AfterEach
+* @BeforeEach is used to signal that a certain method should be executed before the test
+* @AfterEach is used to signal that a certain method should be executed after the test
 
-* @BeforeAll, @AfterAll
-* @DisplayName
-* @Nested
-* assumeFalse, assumeTrue
+* @BeforeAll is used to signal that a certain method should be executed before all tests
+* @AfterAll is used to signal that a certain method should be executed after all tests
+* @Display name is used to declare a custom display name for a test (This does not affect the content of the test)
+* @Nested is used declare that the class is placed inside another class and therefore arranged in a certain order
+* assumeTrue validates the given assumption to be true and if it is true the test continues
+* assumeFalse validates the given assumption to be false and if it is false the test continues
 
 ### 3.2 Mocking frameworks
->>>>>>> 771496def5f80c47d1b2a96aab418b0a55582e72
+Since we have experience using mock framewor
