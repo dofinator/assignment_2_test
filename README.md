@@ -58,13 +58,13 @@ Since we have experience using mock framework using C#, we will evaluate some of
 
 As the two mocking frameworks we will compare Moq is the only one that has a dedicated Mock class to represent a mock. It is known for having a simpler syntax.
 
-## 1. You first create the mock object for which class you want to isolate and test. you specify the type by using generics as seen below: 
+#### 1. You first create the mock object for which class you want to isolate and test. you specify the type by using generics as seen below: 
 
 ```
 var movieScore = new Mock<IMovieScore>();
 ```
 
-## 1. Next up you can call the *Setup* and *Return* methods to setup any method calls on the mocks and what the should return: 
+#### 1. Next up you can call the *Setup* and *Return* methods to setup any method calls on the mocks and what the should return: 
 
 ```
 movieScore.Verify(ms => ms.Score(title));
