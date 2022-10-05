@@ -22,11 +22,12 @@ A simple test to see if the software might have been susceptible to SQL-injectio
 
 #### Setup
 1. Virtual env, from root of project : **Run command in terminal** ````source venv/Scripts/activate````
-2. Run the test, from root of project: **Run command in terminal** ```behave ```
+2. Run the test, from root of project : **Run command in terminal** ```behave ```
 
 
 
 ### 2.2 Bowling Game Kata
+1. Run the test, from root of project : **Run command in terminal** ```python -m unittest bowling_test.py ```
 
 
 # 3 - Investigation of Tools
