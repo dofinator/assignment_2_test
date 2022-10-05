@@ -24,13 +24,14 @@ A simple test to see if the software might have been susceptible to SQL-injectio
 1. Virtual env, from root of project : **Run command in terminal** ````source venv/Scripts/activate````
 2. Run the test, from root of project: **Run command in terminal** ```behave ```
 
-
- ├── ...
-    ├── SiMiniProject2BPM                   
-    │   ├── SiMiniProject2BPM.sin        
-    │   ├── ...       
-    │   └── ...                
+```
+ ├── test-handin-2 
+    ├── features                 
+    │   ├── lower_string.feature        
+    │   ├── reverse_string.feature       
+    │   └── upper_string.feature                
     └── ...
+```
 
 ### 2.2 Bowling Game Kata
 
