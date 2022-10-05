@@ -109,5 +109,13 @@ calculator.DidNotReceive().Add(2, 2);
 
 //Raise events
 calculator.PoweringUp += Raise.Event();
-[12:23]
 ```
+
+######## Advantages
+
+The most simple syntax of the three
+Good documentation
+
+#### Disadvantages
+
+Static state can cause problems with multiple tests (I've only read about this, not experienced it - yet)
