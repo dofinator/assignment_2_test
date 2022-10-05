@@ -111,7 +111,7 @@ calculator.DidNotReceive().Add(2, 2);
 calculator.PoweringUp += Raise.Event();
 ```
 
-######## Advantages
+#### Advantages
 
 The most simple syntax of the three
 Good documentation
