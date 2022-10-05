@@ -15,3 +15,18 @@ In 2007, Albert Gonzalez uploaded his packet-sniffing malware into ATM systems, 
 
 ##### Answer: 
 A simple test to see if the software might have been susceptible to SQL-injection
+
+# 2 - Two Katas
+
+### 2.1 String Utility
+
+
+### 2.2 Bowling Game Kata
+
+
+# 3 - Investigation of Tools
+
+### 3.1 JUnit 5 
+
+
+### 3.2 Mocking frameworks
