@@ -22,12 +22,11 @@ A simple test to see if the software might have been susceptible to SQL-injectio
 
 #### Setup
 1. Virtual env, from root of project : **Run command in terminal** ````source venv/Scripts/activate````
-2. Run the test, from root of project : **Run command in terminal** ```behave ```
+2. Run the test, from root of project: **Run command in terminal** ```behave ```
 
 
 
 ### 2.2 Bowling Game Kata
-1. Run the test, from root of project : **Run command in terminal** ```python -m unittest bowling_test.py ```
 
 
 # 3 - Investigation of Tools
@@ -51,14 +50,50 @@ A simple test to see if the software might have been susceptible to SQL-injectio
 * assumeFalse validates the given assumption to be false and if it is false the test continues
 
 ### 3.2 Mocking frameworks
-Since we have experience using mock framework using C#, we will evaluate some of them
+Mocking frameworks were made to avoid creating homemade stubs. The purpose of mocking is to "mock" things away using replacements. The purpose is to complement unit testing by isolating dependencies to test their functionality
+
+Since we have experience using mock framework using C#, we will evaluate some of them. 
 
 #### Moq
+
+As the two mocking frameworks we will compare Moq is the only one that has a dedicated Mock class to represent a mock. It is known for having a simpler syntax.
+
+# 1. 
+
+```
+[TestCase(false, 0)]
+[TestCase(false, 0)]
+[TestCase(false, 7.99)]
+[TestCase(true, 8)]
+[TestCase(true, 10)]
+public void CanSuggest(bool expected, double score)
+{
+    // Arrange
+    var movieScore = new Mock<IMovieScore>();
+    movieScore.Setup(ms => ms.Score(It.IsAny<string>())).Returns(score);
+    var movieSuggestion = new MovieSuggestion(movieScore.Object);
+    var title = Guid.NewGuid().ToString();
+
+    // Act
+    var isGood = movieSuggestion.IsGoodMovie(title);
+
+    // Assert
+    Assert.That(isGood, Is.EqualTo(expected));
+    movieScore.Verify(ms => ms.Score(title));
+}
+
+```
+
+
+
+
+
+
 
 
 #### NSubstitute
 
-#### FakeItEasy
+
 
 
 
