@@ -130,6 +130,6 @@ Static state can cause problems with multiple tests
 
 ### Which one we prefer?
 
-We have a lot of experience using Moq, however after trying out NSubstitute the method extensions it uses produces a lot cleaner code. The fact that NSubstitute is also more user friendly is why we would prefer that. 
+We have a lot of experience using Moq, however after trying out NSubstitute and the method extensions it uses makes code a lot cleaner and readable. The fact that NSubstitute is also more user friendly is why we would prefer that. 
 
 
