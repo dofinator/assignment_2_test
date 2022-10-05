@@ -16,17 +16,13 @@ In 2007, Albert Gonzalez uploaded his packet-sniffing malware into ATM systems, 
 ##### Answer: 
 A simple test to see if the software might have been susceptible to SQL-injection
 
-
-# 1 - String utility
-
-### Setup
-1. Virtual env, from root of project : **Run command in terminal** ````source venv/Scripts/activate````
-2. Run the test, from root of project: **Run command in terminal** ```behave ```
-
 # 2 - Two Katas
 
 ### 2.1 String Utility
 
+#### Setup
+1. Virtual env, from root of project : **Run command in terminal** ````source venv/Scripts/activate````
+2. Run the test, from root of project: **Run command in terminal** ```behave ```
 
 
 
