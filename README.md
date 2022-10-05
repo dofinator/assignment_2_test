@@ -42,6 +42,7 @@ In the following directory tree u will find three ```.py``` files which represen
     │      ├── reverse_string.py
     │      ├── upper_string.py
     └── ...
+```
 
 ### 2.2 Bowling Game Kata
 
