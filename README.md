@@ -118,4 +118,4 @@ Good documentation
 
 #### Disadvantages
 
-Static state can cause problems with multiple tests (I've only read about this, not experienced it - yet)
+Static state can cause problems with multiple tests 
