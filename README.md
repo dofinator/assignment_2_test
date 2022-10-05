@@ -1,4 +1,4 @@
-# handin-test-2
+# Handin-test-2
 # 1 - Reflections
 
 ### 1.1 Computer Mouse
