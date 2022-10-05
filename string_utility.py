@@ -13,7 +13,6 @@ def upper_letters(s):
     return "".join(s)
 
 
-
 def lower_letters(s):
     s = list(s)
     lowercase = "abcdefghijklmnopqrstuvwxyz"
