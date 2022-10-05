@@ -45,7 +45,7 @@ In the following directory tree u will find three ```.py``` files which represen
 ```
 
 ### 2.2 Bowling Game Kata
-
+1. Run the test, from root of directory : **Run command** ```python -m unittest bowling_test.py ```
 
 # 3 - Investigation of Tools
 
