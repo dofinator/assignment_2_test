@@ -50,7 +50,7 @@ A simple test to see if the software might have been susceptible to SQL-injectio
 * assumeFalse validates the given assumption to be false and if it is false the test continues
 
 ### 3.2 Mocking frameworks
-Mocking frameworks were made to avoid creating homemade stubs. The purpose of mocking is to "mock" things away using replacements. The purpose is to complement unit testing by isolating dependencies to test their functionality
+Mocking frameworks were made to avoid creating homemade stubs. The purpose of mocking is to "mock" things away using replacements. You can use it to complement unit testing by isolating dependencies to test their functionality
 
 Since we have experience using mock framework using C#, we will evaluate some of them. 
 
@@ -69,6 +69,20 @@ var movieScore = new Mock<IMovieScore>();
 ```
 movieScore.Verify(ms => ms.Score(title));
 ```
+
+#### Advantages
+
+* Widely adopted
+* Explicit mocks (optional)
+
+#### Disadvantages
+
+* You have to create a dedicated mock class
+* Setup and verification uses lambdas which makes the code more complex to read
+
+
+
+
 
 #### NSubstitute
 
