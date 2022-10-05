@@ -24,6 +24,7 @@ A simple test to see if the software might have been susceptible to SQL-injectio
 1. Virtual env, from root of project : **Run command in terminal** ````source venv/Scripts/activate````
 2. Run the test, from root of project: **Run command in terminal** ```behave ```
 
+In the following directory tree, u will find three ```.feature``` files which represent the tests in a natural language format. 
 ```
  ├── test-handin-2 
     ├── features                 
@@ -32,6 +33,15 @@ A simple test to see if the software might have been susceptible to SQL-injectio
     │   └── upper_string.feature                
     └── ...
 ```
+In the following directory tree u will find three ```.py``` files which represents the tests itself.
+```
+ ├── test-handin-2 
+    ├── features                 
+    │   ├── steps
+    │      ├── lower_string.py
+    │      ├── reverse_string.py
+    │      ├── upper_string.py
+    └── ...
 
 ### 2.2 Bowling Game Kata
 
