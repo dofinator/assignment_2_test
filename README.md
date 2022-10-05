@@ -36,6 +36,11 @@ A simple test to see if the software might have been susceptible to SQL-injectio
 
 * @RepeatedTest - Is used to signal that the annotated method is a test template method that should be repeated a specified number of times. It is important to note that the repeated tests work with the same data. Using an alternative such as paramatized tests can be used to work with data variations.
 
+* @BeforeEach, @AfterEach
 
+* @BeforeAll, @AfterAll
+* @DisplayName
+* @Nested
+* assumeFalse, assumeTrue
 
 ### 3.2 Mocking frameworks
