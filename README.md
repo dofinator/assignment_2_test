@@ -33,21 +33,21 @@ A simple test to see if the software might have been susceptible to SQL-injectio
 
 ### 3.1 JUnit 5 
 
-* **@Tag** - You can use this tag for filter tests by tagging a subset of them under a unique tag name. So for instance if you have unit and integration tests, you could easily group the unit tests under the same tag, and the same with integrationtests.
+* @Tag - You can use this tag for filter tests by tagging a subset of them under a unique tag name. So for instance if you have unit and integration tests, you could easily group the unit tests under the same tag, and the same with integrationtests.
 
-* **@Disabled** - Is used to signal that the annotated test method is currently disabled and should not be executed.
+* @Disabled - Is used to signal that the annotated test method is currently disabled and should not be executed.
 
-* **@RepeatedTest** - Is used to signal that the annotated method is a test template method that should be repeated a specified number of times. It is important to note that the repeated tests work with the same data. Using an alternative such as paramatized tests can be used to work with data variations.
+* @RepeatedTest - Is used to signal that the annotated method is a test template method that should be repeated a specified number of times. It is important to note that the repeated tests work with the same data. Using an alternative such as paramatized tests can be used to work with data variations.
 
-* **@BeforeEach** is used to signal that a certain method should be executed before the test
-* **@AfterEach** is used to signal that a certain method should be executed after the test
+* @BeforeEach is used to signal that a certain method should be executed before the test
+* @AfterEach is used to signal that a certain method should be executed after the test
 
-* **@BeforeAll** is used to signal that a certain method should be executed before all tests
-* **@AfterAll** is used to signal that a certain method should be executed after all tests
-* **@Display** name is used to declare a custom display name for a test (This does not affect the content of the test)
-* **@Nested** is used declare that the class is placed inside another class and therefore arranged in a certain order
-* **assumeTrue** validates the given assumption to be true and if it is true the test continues
-* **assumeFalse** validates the given assumption to be false and if it is false the test continues
+* @BeforeAll is used to signal that a certain method should be executed before all tests
+* @AfterAll is used to signal that a certain method should be executed after all tests
+* @Display name is used to declare a custom display name for a test (This does not affect the content of the test)
+* @Nested is used declare that the class is placed inside another class and therefore arranged in a certain order
+* assumeTrue validates the given assumption to be true and if it is true the test continues
+* assumeFalse validates the given assumption to be false and if it is false the test continues
 
 ### 3.2 Mocking frameworks
 Mocking frameworks were made to avoid creating homemade stubs. The purpose of mocking is to "mock" things away using replacements. The purpose is to complement unit testing by isolating dependencies to test their functionality
@@ -58,38 +58,17 @@ Since we have experience using mock framework using C#, we will evaluate some of
 
 As the two mocking frameworks we will compare Moq is the only one that has a dedicated Mock class to represent a mock. It is known for having a simpler syntax.
 
-# 1. 
+## 1. You first create the mock object for which class you want to isolate and test. you specify the type by using generics as seen below: 
 
 ```
-[TestCase(false, 0)]
-[TestCase(false, 0)]
-[TestCase(false, 7.99)]
-[TestCase(true, 8)]
-[TestCase(true, 10)]
-public void CanSuggest(bool expected, double score)
-{
-    // Arrange
-    var movieScore = new Mock<IMovieScore>();
-    movieScore.Setup(ms => ms.Score(It.IsAny<string>())).Returns(score);
-    var movieSuggestion = new MovieSuggestion(movieScore.Object);
-    var title = Guid.NewGuid().ToString();
-
-    // Act
-    var isGood = movieSuggestion.IsGoodMovie(title);
-
-    // Assert
-    Assert.That(isGood, Is.EqualTo(expected));
-    movieScore.Verify(ms => ms.Score(title));
-}
-
+var movieScore = new Mock<IMovieScore>();
 ```
 
+## 1. Next up you can call the *Setup* and *Return* methods to setup any method calls on the mocks and what the should return: 
 
-
-
-
-
-
+```
+movieScore.Verify(ms => ms.Score(title));
+```
 
 #### NSubstitute
 
