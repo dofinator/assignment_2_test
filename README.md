@@ -50,4 +50,14 @@ A simple test to see if the software might have been susceptible to SQL-injectio
 * assumeFalse validates the given assumption to be false and if it is false the test continues
 
 ### 3.2 Mocking frameworks
-Since we have experience using mock framewor
+Since we have experience using mock framework using C#, we will evaluate some of them
+
+#### Moq
+
+
+#### NSubstitute
+
+#### FakeItEasy
+
+
+
