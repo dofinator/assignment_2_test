@@ -95,7 +95,7 @@ movieScore.Verify(ms => ms.Score(title));
 
 NSubstitute is a friendly substitute for .NET mocking libraries. It has a simple, succinct syntax to help developers write clearer tests. NSubstitute is designed for Arrange-Act-Assert (AAA) testing and with Test Driven Development (TDD) in mind.
 
-
+```
 //Create:
 var calculator = Substitute.For<ICalculator>();
 
@@ -110,4 +110,4 @@ calculator.DidNotReceive().Add(2, 2);
 //Raise events
 calculator.PoweringUp += Raise.Event();
 [12:23]
-
+```
