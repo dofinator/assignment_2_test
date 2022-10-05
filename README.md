@@ -26,10 +26,10 @@ A simple test to see if the software might have been susceptible to SQL-injectio
 
 
  ├── ...
-    ├── test-handin-2                  
-    │   ├── lower_string.feature         
-    │   ├── reverse_string.feature 
-    │   └── upper_string.feature                 
+    ├── SiMiniProject2BPM                   
+    │   ├── SiMiniProject2BPM.sin        
+    │   ├── ...       
+    │   └── ...                
     └── ...
 
 ### 2.2 Bowling Game Kata
