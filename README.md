@@ -31,7 +31,10 @@ A simple test to see if the software might have been susceptible to SQL-injectio
 ### 3.1 JUnit 5 
 
 * @Tag - You can use this tag for filter tests by tagging a subset of them under a unique tag name. So for instance if you have unit and integration tests, you could easily group the unit tests under the same tag, and the same with integrationtests.
-* 
+
+* @Disabled - Is used to signal that the annotated test method is currently disabled and should not be executed.
+
+* @RepeatedTest - Is used to signal that the annotated method is a test template method that should be repeated a specified number of times. It is important to note that the repeated tests work with the same data. Using an alternative such as paramatized tests can be used to work with data variations.
 
 
 
