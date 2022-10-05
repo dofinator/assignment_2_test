@@ -30,7 +30,8 @@ A simple test to see if the software might have been susceptible to SQL-injectio
 
 ### 3.1 JUnit 5 
 
-* hello
+* @Tag - You can use this tag for filter tests by tagging a subset of them under a unique tag name. So for instance if you have unit and integration tests, you could easily group the unit tests under the same tag, and the same with integrationtests.
+* 
 
 
 
