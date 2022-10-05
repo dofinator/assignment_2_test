@@ -54,7 +54,7 @@ Mocking frameworks were made to avoid creating homemade stubs. The purpose of mo
 
 Since we have experience using mock framework using C#, we will evaluate some of them. 
 
-#### Moq
+### Moq
 
 As the two mocking frameworks we will compare Moq is the only one that has a dedicated Mock class to represent a mock. It is known for having a simpler syntax.
 
@@ -91,7 +91,7 @@ movieScore.Verify(ms => ms.Score(title));
 
 
 
-#### NSubstitute
+### NSubstitute
 
 
 
